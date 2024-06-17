@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+<body>
+    <div class="moving">
+        <marquee direction="right" behavior="alternate" > Explore. Travel.</marquee>
+    </div>
+
+    <div class="sidebar" style="display:none" id="mySidebar">
+      <button class="bar-item"
+      onclick="mySidebar_close()">Close &times;</button>
+      <a href="index.html" class="bar-item-button">Home</a>
+      <a href="education.html" class="bar-item-button">Education</a>
+      <a href="skills.html" class="bar-item-button">Skills</a>
+      <a href="travel.html" class="bar-item-button">Travel</a>
+      <a href="contact.html" class="bar-item-button">Contact</a>
+    </div>
+    
+    <div id="main">
+    
+    <div class="teal">
+      <button id="openNav" class="button" onclick="mySidebar_open()">&#9776;</button>
+      </div>
+    </div>
+    </div>
+    
+  <div class="container1">
+      <h1>TRAVEL</h1>
+      <img usemap="#workmap" src="map.png" width="800">
+      <map name="workmap">
+        <area class="myHover" shape="rect" coords="567,647,757,723" >
+        <div class="visible">
+          <p>Turkey, Istanbul</p>
+          <img src="galatasaray.jpeg" width="150"height="200px">
+        </div>
+        <map name="workmap1">
+          <area class="myHover-paris" shape="poly" coords="242,550,264,561,277,576,279,604,279,627,304,632,322,639,339,622,356,627,368,613,362,595,362,578,364,564,373,561,376,545,356,537,336,524,320,510,313,522,297,533,297,524,286,535,275,533,272,548,257,545">
+          <div class="visible-paris">
+            <p>France, Paris</p>
+            <img src="eiffel.jpeg" width="150" height="200px">
+          </div>
+        </map>
+        <map name="workmap1">
+          <area class="myHover-srb" shape="poly" coords="510,638,527,635,527,619,520,605,503,585,491,588,495,606,497,619,503,629">
+
+          <div class="visible-bg">
+            <p>Serbia, Belgrade</p>
+            <img src="beograd.jpg" width="150" height="200px">
+          </div>
+        </map>
+        <map name="workmap1">
+          <area shape="poly" class="myHover-blg" coords="529,614,531,621,532,631,531,637,535,653,573,647,583,631,589,618,574,615,562,618,545,617">
+
+          <div class="visible-sofia">
+            <p>Bulgaira, Sofia</p>
+            <img src="sofia.webp" width="150" height="200px">
+          </div>
+        </map>
+        <map name="workmap1">
+          <area class="myHover-belgium" shape="poly" coords="322,505,335,517,351,528,357,517,348,502,334,501" >
+          <div class="visible-brs">
+            <p>Belgium, Brussels</p>
+            <img src="brussles.jpg" width="200" height="150px">
+          </div>
+        </map>
+        <map name="workmap1">
+          <area class="myHover-grc" shape="poly" coords="530,717,519,709,508,678,513,668,524,659,545,647,563,648,563,655,547,656,538,663,530,677,546,688,538,699,533,702">
+          <div class="visible-ths">
+            <p>Greece, Thessaloniki</p>
+            <img src="selanik.jpeg" width="150" height="200px">
+          </div>
+        </map>
+        <map name="workmap1">
+          <area class="myHover-aus" shape="poly" coords="391,564,401,574,417,575,428,576,451,580,464,575,467,558,465,542,445,544,437,550,429,554,430,562,413,562,403,564">
+
+          <div class="visible-linz">
+            <p>Austria, Linz</p>
+            <img src="linz.jpg" width="200" height="150px">
+          </div>
+        </map>
+        <map name="workmap1">
+          <area class="myHover-bih" shape="poly" coords="457,602,470,618,476,629,485,624,493,620,495,609,491,601,475,599">
+          <div class="visible-mostar">
+            <p>Bosnia and Herzegovina, Mostar/Sarajevo</p>
+            <img src="mostar.webp" width="200" height="150px">
+          </div>
+        </map>
+        <map name="workmap1">
+          <area class="myHover-mnt" shape="poly" coords="491,638,504,633,494,625,486,628">
+          <div class="visible-kotor">
+            <p>Montenegro, Kotor/Budva</p>
+            <img src="kotor.jpg" width="150" height="200px">
+          </div>
+        </map>
+        <map name="workmap1">
+          <area class="myHover-cr" shape="poly" coords="466,617,456,603,467,599,485,597,490,587,464,580,451,591,445,596,452,612,463,622,470,623">
+          <div class="visible-split">
+            <p>Croatia, Split</p>
+            <img src="split.jpeg" width="200" height="150px">
+          </div>
+        </map>
+      </map>
+  </div>
+  <script>
+      function mySidebar_open() {
+        document.getElementById("main").style.marginLeft = "25%";
+        document.getElementById("mySidebar").style.width = "25%";
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("openNav").style.display = 'none';
+      }
+      function mySidebar_close() {
+        document.getElementById("main").style.marginLeft = "0%";
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("openNav").style.display = "inline-block";
+      } 
+  </script>
+    
+</body>
+</html>

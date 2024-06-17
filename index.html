@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<body>
+
+    <div class="moving">
+        <marquee direction="right" behavior="alternate" > Explore. Dilara's Personal Web Site.</marquee>
+      
+    </div>
+
+<div class="sidebar" style="display:none" id="mySidebar">
+  <button class="bar-item"
+  onclick="mySidebar_close()">Close &times;</button>
+  <a href="index.html" class="bar-item-button">Home</a>
+  <a href="education.html" class="bar-item-button">Education</a>
+  <a href="skills.html" class="bar-item-button">Skills</a>
+  <a href="travel.html" class="bar-item-button">Travel</a>
+  <a href="contact.html" class="bar-item-button">Contact</a>
+</div>
+
+<div id="main">
+
+<div class="teal">
+  <button id="openNav" class="button" onclick="mySidebar_open()">&#9776;</button>
+  <div class="container">
+    <h1><u>DILARA'S PERSONAL WEB PAGE</u></h1>
+    <div id="photo">
+    <img src="image.jpg" alt="">
+  </div>
+</div>
+</div>
+
+
+<script>
+function mySidebar_open() {
+  document.getElementById("main").style.marginLeft = "25%";
+  document.getElementById("mySidebar").style.width = "25%";
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("openNav").style.display = 'none';
+}
+function mySidebar_close() {
+  document.getElementById("main").style.marginLeft = "0%";
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("openNav").style.display = "inline-block";
+}
+</script>
+
+</body>
+</html>
